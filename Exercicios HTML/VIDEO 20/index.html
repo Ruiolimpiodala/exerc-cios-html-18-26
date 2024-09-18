@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Suspenso e Caixa de Listagem em Formulários</title>
+
+ <!--
+    <style>
+        em {
+            color: deeppink;
+        
+        }
+        fieldset {
+            border: 2px brown solid;
+            border-radius: 10px;
+            width: 40%;
+        }
+    </style>
+-->
+
+</head>
+<body>
+<form name="Cadastro" method="get" action="script.php"></form>    
+
+<fieldset>
+
+    <legend>Selecione as tecnologias desejadas</legend>
+
+    <select name="tecnologias" id="tecno" multiple size="6">
+        
+        <optgroup label="Linguagens compiladas">
+            <option value="ADA">ADA</option>
+        </optgroup>
+
+        <optgroup label="linguagens Script">
+            <OPtion value="C" selected>Linguagem c</OPtion>
+            <OPtion value="C++" >C++</OPtion>
+            <OPtion value="Java" selected>Java</OPtion>
+            <OPtion value="PHP" selected>PHP</OPtion>
+            <OPtion value="Ruby" selected>Ruby</OPtion>
+        </optgroup>
+        
+    </select><br>
+</fieldset>
+
+</body>
+</html>

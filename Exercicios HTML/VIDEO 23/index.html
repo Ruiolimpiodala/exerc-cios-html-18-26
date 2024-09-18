@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle textarea Caixa de Comentários em FOrmulários</title>
+ <!--
+    <style>
+
+        /* Impedir o redimensionamento da caixa textarea: */
+
+        textarea {
+            resize: none;
+        }
+
+        /* Estilizar valores inválidos: */
+        textarea:invalid{
+            border: 2px solid red;
+        }
+    </style>
+    --->
+</head>
+<body>
+
+    <p><strong>Controles de Caixa Comentários</strong></p>
+    
+    <form name="Cadastro" method="GET" action="script.php">
+
+        <label for="coment">Entre com seus comentários na caixa a 
+            seguir (máx 300 caracteres):</label> <br>
+
+            <textarea rows="8" cols="50" name="coentarios" 
+            id="coment" maxlength="300" minlength="20"></textarea><br>
+
+            <br>
+            <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

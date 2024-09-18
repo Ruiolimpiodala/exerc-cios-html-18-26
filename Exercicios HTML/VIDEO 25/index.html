@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle Dalist -lista de Sugestões em Formulários </title>
+</head>
+<body>
+    
+    <p><strong>Elemento Datalist</strong></p>
+
+    <form name="Cadastro" method="GET" action="script.php">
+        
+        <label for="bebida">Digite a bebeida desejada:</label>
+        <input type="text" name="bebida" id="bebida" list="bebidas">
+        
+        <datalist id="bebidas">
+            <option value="Cerveja"></option>
+            <option value="Chopp"></option>
+            <option value="Vinho Tinto"></option>
+            <option value="Vinho Rosé"></option>
+            <option value="Camparí"></option>
+            <option value="Gin Tônica"></option>
+        </datalist>
+        <br><br>
+
+        <button type="submit" name="envio" value="Enviar">
+            <p>Solicitar Bebida</p>
+        </button>
+
+    </form>
+</body>
+</html>
